@@ -2,6 +2,10 @@
 
 **Recursively prepends a path prefix to path string, array or StdClass objects.**
 
+[![Build Status](https://travis-ci.org/GermaniaKG/PathPrefixer.svg?branch=master)](https://travis-ci.org/GermaniaKG/PathPrefixer)
+[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/?branch=master)
+
 ##Installation
 
 ```bash
