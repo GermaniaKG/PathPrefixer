@@ -44,10 +44,10 @@ class PathPrefixer
      * @param string $separator  String separator for prefix and path.
      *                           When not set, DIRECTORY_SEPARATOR will be used.
      */
-    public function __construct( $root_path = null, $separator = null)
+    public function __construct( $root_path = null, $separator = \DIRECTORY_SEPARATOR)
     {
         $this->root_path = $root_path ?: getcwd();
-        $this->separator = $separator ?: \DIRECTORY_SEPARATOR;
+        $this->separator = $separator;
     }
 
     /**
