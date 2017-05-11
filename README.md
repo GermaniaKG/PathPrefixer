@@ -34,9 +34,21 @@ $result = $prefixer([
 // Result: 
 //	'foo' => '/path/to/root/includes',
 //	'bar' => '/path/to/root/templates'
-
-
 ```
+
+### Custom path separators
+
+Per default, the `DIRECTORY_SEPARATOR` constant will be used for glueing the prefix and the path.
+You may pass a custom seperator as well:
+
+```php
+<?php
+$prefixer = new PathPrefixer( '/path/to/root', "@" );
+
+echo $prefixer('templates');
+// Result: "/path/to/root@templates"
+```
+
 
 
 ##Development and Testing
