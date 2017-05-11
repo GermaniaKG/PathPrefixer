@@ -34,10 +34,12 @@ class PathPrefixer
      */
     public $root_path;
 
+
     /**
      * @var string
      */
     public $separator;
+
 
     /**
      * @param string $root_path  Path to root directory; default: null (or getcwd(), respectively)
@@ -49,6 +51,7 @@ class PathPrefixer
         $this->root_path = $root_path ?: getcwd();
         $this->separator = $separator;
     }
+
 
     /**
      * Prepends a path prefix to the path given.
