@@ -1,6 +1,31 @@
 <?php
 namespace Germania\PathPrefixer;
 
+/**
+ * Adds a prefix to a given path string or array.
+ *
+ * Usage:
+ *
+ *    <?php
+ *    use Germania\PathPrefixer\PathPrefixer;
+ *
+ *    // Root will default to getcwd()
+ *    $prefixer = new PathPrefixer( '/path/to/root' );
+ *
+ *    echo $prefixer('templates');
+ *    // Result: "/path/to/root/templates"
+ *
+ *
+ *    // Try on array:
+ *    $result = $prefixer([
+ *        'foo' => 'includes',
+ *        'bar' => 'templates'
+ *    ]);
+ *    // Result:
+ *    //  'foo' => '/path/to/root/includes',
+ *    //  'bar' => '/path/to/root/templates'
+ *
+ */
 class PathPrefixer
 {
 
@@ -15,7 +40,9 @@ class PathPrefixer
     public $separator;
 
     /**
-     * @param string $root_path path to root directory; default: null (or getcwd(), respectively)
+     * @param string $root_path  Path to root directory; default: null (or getcwd(), respectively)
+     * @param string $separator  String separator for prefix and path.
+     *                           When not set, DIRECTORY_SEPARATOR will be used.
      */
     public function __construct( $root_path = null, $separator = null)
     {
