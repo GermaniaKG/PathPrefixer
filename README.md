@@ -1,4 +1,4 @@
-#Germania\PathPrefixer
+# Germania\PathPrefixer
 
 **Recursively prepends a path prefix to path string, array or StdClass objects.**
 
@@ -6,14 +6,14 @@
 [![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/?branch=master)
 
-##Installation
+## Installation
 
 ```bash
 $ composer require germania-kg/pathprefixer
 ```
 
 
-##Usage
+## Usage
 
 ```php
 <?php
@@ -51,7 +51,7 @@ echo $prefixer('templates');
 
 
 
-##Development and Testing
+## Development and Testing
 
 Develop using `develop` branch, using [Git Flow](https://github.com/nvie/gitflow).   
 
