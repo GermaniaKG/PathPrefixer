@@ -10,11 +10,17 @@ class PathPrefixer
     public $root_path;
 
     /**
+     * @var string
+     */
+    public $separator;
+
+    /**
      * @param string $root_path path to root directory; default: null (or getcwd(), respectively)
      */
-    public function __construct( $root_path = null)
+    public function __construct( $root_path = null, $separator = null)
     {
         $this->root_path = $root_path ?: getcwd();
+        $this->separator = $separator ?: \DIRECTORY_SEPARATOR;
     }
 
     /**
@@ -26,7 +32,7 @@ class PathPrefixer
     public function __invoke( $path )
     {
         if (is_string( $path )):
-            $result = realpath( join( \DIRECTORY_SEPARATOR, [ $this->root_path,  $path ] ));
+            $result = join( $this->separator, [ $this->root_path,  $path ] );
 
         elseif (is_array($path)):
             $result = array_map($this, $path);
