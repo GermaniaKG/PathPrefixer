@@ -1,5 +1,6 @@
 {
 	"name":        "germania-kg/pathprefixer",
+	"description": "Recursively prepends a path prefix to path string, array or StdClass objects.",
 
 	"type":        "library",
 	"license":     "MIT",
