@@ -1,4 +1,4 @@
-# Germania KG ∙⋅･・∙ PathPrefixer
+# Germania KG ･ PathPrefixer
 
 **Recursively prepends a path prefix to path string, array or StdClass objects.**
 
