@@ -4,7 +4,7 @@ namespace tests;
 use Germania\PathPrefixer\PathPrefixer;
 use \InvalidArgumentException;
 
-class PathPrefixerTest extends \PHPUnit_Framework_TestCase
+class PathPrefixerTest extends \PHPUnit\Framework\TestCase
 {
 
     public $cwd;
