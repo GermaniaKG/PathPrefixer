@@ -13,8 +13,10 @@ php:
 env:
 
 before_script:
-  - cp phpunit.xml.dist phpunit.xml
+  - rm composer.lock
+  - composer self-update
   - composer install --no-interaction
+  - cp phpunit.xml.dist phpunit.xml
 
 script:
   - vendor/bin/phpunit

@@ -1,6 +1,10 @@
 # .scrutinizer.yml
 
 build:
+    dependencies:
+        before:
+            - rm composer.lock
+
     nodes:
         php71:
             environment:
