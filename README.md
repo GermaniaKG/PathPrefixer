@@ -2,12 +2,15 @@
 
 **Recursively prepends a path prefix to path string, array or StdClass objects.**
 
-[![Build Status](https://travis-ci.org/GermaniaKG/PathPrefixer.svg?branch=master)](https://travis-ci.org/GermaniaKG/PathPrefixer)
-[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/?branch=master)
+[![Packagist](https://img.shields.io/packagist/v/germania-kg/pathprefixer.svg?style=flat)](https://packagist.org/packages/germania-kg/pathprefixer)
+[![PHP version](https://img.shields.io/packagist/php-v/germania-kg/pathprefixer.svg)](https://packagist.org/packages/germania-kg/pathprefixer)
+[![Build Status](https://img.shields.io/travis/GermaniaKG/PathPrefixer.svg?label=Travis%20CI)](https://travis-ci.org/GermaniaKG/PathPrefixer)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/badges/build.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/PathPrefixer/build-status/master)
 
-## Installation
+
+## Installation with Composer
 
 ```bash
 $ composer require germania-kg/pathprefixer
@@ -56,20 +59,21 @@ See [issues list.][i0]
 
 [i0]: https://github.com/GermaniaKG/PathPrefixer/issues 
 
-
 ## Development
 
 ```bash
-$ git clone git@github.com:GermaniaKG/PathPrefixer.git pathprefixer
-$ cd pathprefixer
+$ git clone https://github.com/GermaniaKG/PathPrefixer.git
+$ cd PathPrefixer
 $ composer install
 ```
 
 ## Unit tests
 
-Either copy `phpunit.xml.dist` to `phpunit.xml` and adapt to your needs, or leave as is. 
-Run [PhpUnit](https://phpunit.de/) like this:
+Either copy `phpunit.xml.dist` to `phpunit.xml` and adapt to your needs, or leave as is. Run [PhpUnit](https://phpunit.de/) test or composer scripts like this:
 
 ```bash
+$ composer test
+# or
 $ vendor/bin/phpunit
 ```
+
