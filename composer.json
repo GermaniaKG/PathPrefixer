@@ -1,6 +1,7 @@
 {
 	"name":        "germania-kg/pathprefixer",
-	"description": "Recursively prepends a path prefix to path string, array or StdClass objects.",
+	"description": "Recursively prepends a prefix to path string, array or StdClass objects.",
+  "keywords": [ "prepend", "prefix", "string-manipulation", "array-manipulation", "StdClass"],
 
 	"type":        "library",
 	"license":     "MIT",
